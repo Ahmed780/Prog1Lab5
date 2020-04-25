@@ -56,8 +56,7 @@ public class Question1 {
 	counter++;
 	average =  Math.round(total / counter);
 	}
-              
-                
+		
     	System.out.println("Highest score: " + Highest + " with a score of " + max);
     	System.out.println("Lowest score: " + Lowest + " with a score of " + min);
     	System.out.println("Total amount of grades processed: " + counter);
