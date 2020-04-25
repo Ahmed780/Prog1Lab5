@@ -1,0 +1,12 @@
+Uzair : 75
+Ahmed : 60
+Uraib : 68
+Ali : 85
+Rafey : 90
+Lakhani : 95
+Muhammad : 100
+Nazir : 78
+John : 82
+Torry : 80 
+
+
