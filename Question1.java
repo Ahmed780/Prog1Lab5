@@ -17,40 +17,39 @@ import java.util.Scanner;
  * @author Uzair Ahmed 
  */
 
-	public class Question1 {
+public class Question1 {
+	
 /**
 * @param args the command line arguments
 * @throws java.io.FileNotFoundException
-*/		
-		
-    public static void main(String[] args) throws FileNotFoundException {
+*/			
+    	public static void main(String[] args) throws FileNotFoundException {
 
-	File inFile = new File("/Users/yoyo/Desktop/Q1.txt");
-	Scanner scFile = new Scanner(inFile);
+    	File inFile = new File("/Users/Uzair/Desktop/Grades.txt");
+    	Scanner scFile = new Scanner(inFile);
                 
-    int counter = 0;
-	int max = 0;
+    	int counter = 0;
+    	int max = 0;
 	int min = 100;
 	double total = 0; 
 	double average = 0;
-    String Highest = "";
-    String Lowest = "";
-                               			
+    	String Highest = "";
+    	String Lowest = "";
+                               		          
+    	while (scFile.hasNext()){
             
-    while (scFile.hasNext()){
-            
-    String name = scFile.next();
-    String space = scFile.next();
-    int mark = scFile.nextInt();
+    	String name = scFile.next();
+    	String space = scFile.next();
+    	int mark = scFile.nextInt();
                			
 	if(mark > max){
 	max = mark;
-    Highest = name;
+    	Highest = name;
 	}	
 					
 	if(mark < min){
 	min = mark;
-    Lowest = name;
+    	Lowest = name;
 	}
 					
 	total += mark;
@@ -59,10 +58,10 @@ import java.util.Scanner;
 	}
               
                 
-    System.out.println("Highest score: " + Highest + " with a score of " + max);
-    System.out.println("Lowest score: " + Lowest + " with a score of " + min);
-    System.out.println("Total amount of grades processed: " + counter);
-    System.out.println("The average of all grades: " + average);				 
+    	System.out.println("Highest score: " + Highest + " with a score of " + max);
+    	System.out.println("Lowest score: " + Lowest + " with a score of " + min);
+    	System.out.println("Total amount of grades processed: " + counter);
+    	System.out.println("The average of all grades: " + average);				 
              
  }
 			 
