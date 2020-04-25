@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//package lab5;
+package lab5;
 
 /**
  * This is a class encapsulating the concept of a team such as FCB,Real Madrid etc,
@@ -12,9 +12,9 @@
  * class to test all methods.
  * @author Uzair Ahmed 
  */
-	public class Team {
+    public class Team {
 
-	private String name;
+    private String name;
 	
     public Team() {
 
@@ -26,23 +26,24 @@
 
     this.name = name;
   
-	}
+    }
 	
     public String getName() {
 
     return name;
     }
 	
-	public String toString(){
+    public String toString(){
 
     return ("\nThe team name is " + this.name);
     }
 	
-	public boolean equals(Team other) {
+    public boolean equals(Team other) {
     return name.equals(other.name);
-  }	
-	
-        }
+  
+ }
+	    
+}
 	 
 
 
